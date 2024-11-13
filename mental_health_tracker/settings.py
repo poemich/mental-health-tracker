@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-se+mc5@cf2*k9w+u+$nb+wbe$@egh0_=7!o2^-=0i4pinu1b$m
 PRODUCTION = os.getenv("PRODUCTION", False)
 DEBUG = not PRODUCTION
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "muhammad-fadhlan31-mentalhealthtracker.pbp.cs.ui.ac.id"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "muhammad-fadhlan31-mentalhealthtracker.pbp.cs.ui.ac.id", "10.0.2.2"]
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'authentication',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
