@@ -88,7 +88,7 @@ def logout_user(request):
     return response
 
 def edit_mood(request, id):
-    # Get mood entry berdasarkan id
+# Get mood entry berdasarkan id
     mood = MoodEntry.objects.get(pk = id)
 
     # Set mood entry sebagai instance dari form
